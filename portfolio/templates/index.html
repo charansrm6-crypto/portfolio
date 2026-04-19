@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri ramoju Charan Kumar - Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!--- Navigation header --->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="{% static 'images/ac.jpeg' %}" alt="Profile Photo" class="ac">
+                <h1>Sri ramoju Charan Kumar</h1>
+                <p class="subtitle">B-tech student</p>
+            </div>
+            <nav class="nav-buttons">
+                <button class="nav-btn active" data-section="home">Home</button>
+                <button class="nav-btn" data-section="about">About me</button>
+                <button class="nav-btn" data-section="skills">Skills</button>
+                <button class="nav-btn" data-section="projects">Projects</button>
+                <button class="nav-btn" data-section="education">Education</button>
+                <button class="nav-btn" data-section="certifications">Certifications</button>
+            </nav>
+        </div>
+    </header>
+
+    <!--- Main content--->
+    <main class="main-content">
+        <div class="container">
+            <!--- Home section -->
+            <section id="home" class="section active">
+                <div class="home-intro">
+                    <h2>Welcome to My Portfolio</h2>
+                    <img src="{% static 'images/ac.jpeg' %}" alt="Profile Photo">
+                    <p>Hi, I'm Sri ramoju Charan Kumar</p>
+                    <p class="intro-text">A Passionate B-tech Student </p>
+                    <div class="intro-details">
+                        <p>I love building web applications, sloving problems using python.</p>
+                        <p>Currently, i am learning Python full stack and working on real-world projects through internships.</p>
+                    </div>
+                </div>
+            </section>
+            <!---About me section-->
+            <section id="about" class="section">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>I have little bit experience in python and am currently expanding my skills in Full Stack Development using HTML,CSS, Javascript,MY SQL & Django.</p>
+                    <div class="about-highlights">
+                        <div class="highlight">
+                            <h4>Problem Solving</h4>
+                            <p>I enjoy sloving algorithmic problems and actively practice coding on platform like Geek-For-Geeks.</p>
+                        </div>
+                        <div class="highlight">
+                            <h4>Goals</h4>
+                            <p> My goal is to build efficient, user-friendly applictions and contribute to open-source projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Skills section-->
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Javascript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Javascript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameeorks & Libraries</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Django (Learning)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">MYSQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Git-Hub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Pycharm</span>
+                    </div>
+                </div>
+            </section>
+            <!--- Project section-->
+            <section id="projects" class="section">
+                <h2>projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>My portfolio website</h3>
+                        <p class="project-description">A responsive portfolio website built with django, HTML, CSS, and Javascript.</p>
+                        <p class="project-tech"><strong>Technologies:</strong></p>
+                        <button class="project-btn">view Details</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Education section -->
+            <section id="education" class="section">
+                <h2>Education</h2>
+                <div class="education-content">
+                    <div class="education-card">
+                        <div class="edication-header">
+                            <h3>Diploma- Electronics & Communication Engineering</h3>
+                            <span class="education-year">2025 Compleated</span>
+                            <h3>B.tech - Electronics & Communication Engineering</h3>
+                            <span class="education-year">Present pushing my B-tech</span>
+                        </div>
+                        <p class="education-institute">MIC Collage of Technology</p>
+                        <p class="education-details">Pursuing B-Tech in Electronics & Communication Engineering</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Certifications section-->
+            <section id="certifications" class="section">
+                <h2>Certification</h2>
+                <div class="certification-grid">
+                    <div class="cert-card">
+                        <h3>The Joy of Computing using python</h3>
+                        <p class="cert-issuer">NPTEL</p>
+                        <p class="cert-description">A comprehnsive course on python programming fundamentals and problem-solving.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>@copy; 2025 Sri ramoju Charan Kumar. All rights reserved.</p>
+            <div class="social-links">
+                <p>Connect with me on:</p>
+                <p>
+                    <a href="https://github.com" target="_blank">GitHub</a>
+                    <a href="http://linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="mailto:srinusrm6@gmail.com">Gmail</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
