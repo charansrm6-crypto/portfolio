@@ -55,7 +55,7 @@ Follow these steps to run the project locally:
 git clone https://github.com/charansrm6-crypto/portfolio.git
 
 # Go to project folder
-cd portfolio-business
+cd project-business
 
 # Create virtual environment
 python -m venv env
