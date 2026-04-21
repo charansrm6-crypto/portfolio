@@ -7,7 +7,7 @@ A personal portfolio website built using **Django, HTML, CSS, and JavaScript** t
 ## 🌐 Live Demo
 
 👉 (Add your Render link here after deployment)
-Example: https://your-portfolio.onrender.com
+Example: https://portfolio-r7qj.onrender.com
 
 ---
 
